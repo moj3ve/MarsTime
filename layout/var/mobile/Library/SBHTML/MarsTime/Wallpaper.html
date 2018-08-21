@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MarsTime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../LockHTML/MarsTime/style.css"/>
+	<script src='../../LockHTML/MarsTime/jquery.min.js'></script>
+    <script src="../../LockHTML/MarsTime/marsdate.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+  </head>
+  <body id="main">
+    <div class="box" id="tagMe">Loading...<br>(Make sure you have an active internet connection)</div>
+	<script>
+	$(document).ready(function () {
+		$(function(){
+			document.getElementById("main").style.color = widgetColor;
+			setInterval(thirtySecondFunction, 30000);
+			thirtySecondFunction();
+		});
+		function thirtySecondFunction() { 
+			var str = new MarsDate(new Date()) + '';
+			tokens = str.split(':').slice(0,2),
+			result = tokens.join(':');
+			document.getElementById("tagMe").innerHTML=result; 
+		}
+	});
+	</script>
+  </body>
+</html>

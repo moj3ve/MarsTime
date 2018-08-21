@@ -1,0 +1,14 @@
+body {
+	background: transparent;
+}
+
+#main {
+	text-align:center;
+	font-family: 'Space Mono', monospace;
+}
+
+#box {
+	width:100%;
+	font-size:20px;
+	font-weight:300;
+}

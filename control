@@ -1,0 +1,9 @@
+Package: com.jeffresc.marstime
+Name: MarsTime
+Depends: com.matchstic.xenhtml
+Version: 1.0.2
+Architecture: iphoneos-arm
+Description: A mars time widget for XenHTML
+Maintainer: JeffResc
+Author: JeffResc
+Section: Widgets
